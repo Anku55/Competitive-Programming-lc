@@ -20,6 +20,14 @@ void inorder(Node* root) {
     cout << root->data << " ";
     inorder(root->right);
 }
+void preorder(Node* root) {
+    if (root == NULL) return;
+
+    cout << root->data << " ";
+    inorder(root->left);
+    
+    inorder(root->right);
+}
 int main() {
     Node* root = new Node(1);
 
@@ -30,6 +38,11 @@ int main() {
     root->left->right = new Node(5);
 
     inorder(root);
+    cout<<endl;
+
+    preorder(root);
+
+    
 
 
     return 0;
