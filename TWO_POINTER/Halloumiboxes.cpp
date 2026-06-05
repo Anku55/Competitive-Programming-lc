@@ -3,20 +3,23 @@
 
 using namespace std;
 void solve() {
-   int n;
-   cin>>n;
-   int arr[n];
-   for(int i=0;i<n;i++){
-    cin>>arr[i];
-   }
-   for(int i=0;i<n;i++){
-    if(arr[i]+1 !=arr[i+1]||arr[i]-1!=arr[i+1]){
-        cout<<"YES"<<"\n";
-
-    }else{
-        cout<<"NO"<<"\n";
+    int n,x;
+    cin>>n>>x;
+    vector<int>arr(n);
+    
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
     }
-   }
+    int gas=0;
+    for(int i=0;i<n-1;i++){
+        gas=max(gas,arr[i]-arr[i+1]);
+    }
+    gas=max(gas,2*(x-arr[n-1]));
+    cout<<gas<<"\n";
+    
+    
+    
+
 }
 
 int main() {
@@ -24,13 +27,12 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    // File redirection for local testing
+    
     #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
     #endif
 
-    // Your code goes here
     int t;
     cin >> t;
 
