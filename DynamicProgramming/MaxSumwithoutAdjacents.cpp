@@ -1,3 +1,21 @@
+####################### Recursive Solution
+class Solution {
+  public:
+    int fun(int ind,vector<int>& arr ){
+        if(ind==0)return arr[0];
+        if(ind<0)return 0;
+        
+        int notpick=fun(ind-1,arr);
+        int pick=arr[ind]+fun(ind-2,arr);
+        return max(pick,notpick);
+    }
+    // calculate the maximum sum with out adjacent
+    int findMaxSum(vector<int>& arr, int n) {
+        return fun(n-1,arr);
+        // code here
+        
+    }
+};
 ###############Memoaization##########
 
 class Solution {
