@@ -62,3 +62,29 @@ class Solution {
         return dp[n-1];
     }
 };
+
+######### Space optimization ###########
+class Solution {
+  public:
+    int findMaxSum(vector<int>& arr, int n) {
+
+        vector<int> dp(n);
+
+       int prev=arr[0];
+        int prev2=0;
+
+        for(int i = 1; i < n; i++) {
+
+            int notpick = prev;
+
+            int pick = arr[i];
+            if(i > 1)
+                pick += prev2;
+
+            int cur=max(notpick,pick);
+            prev2=prev;
+            prev=cur;        }
+
+        return prev;
+    }
+};
