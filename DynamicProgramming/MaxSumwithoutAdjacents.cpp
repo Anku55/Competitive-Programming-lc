@@ -37,3 +37,28 @@ class Solution {
         
     }
 };
+
+############# Tabulation ###########
+
+class Solution {
+  public:
+    int findMaxSum(vector<int>& arr, int n) {
+
+        vector<int> dp(n);
+
+        dp[0] = arr[0];
+
+        for(int i = 1; i < n; i++) {
+
+            int notpick = dp[i-1];
+
+            int pick = arr[i];
+            if(i > 1)
+                pick += dp[i-2];
+
+            dp[i] = max(pick, notpick);
+        }
+
+        return dp[n-1];
+    }
+};
