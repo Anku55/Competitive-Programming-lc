@@ -1,3 +1,4 @@
+########### Recursive way ##########
 class Solution {
 public:
     int fun(int ind1 , int ind2 ,string s, string l){
@@ -17,6 +18,35 @@ public:
         int m=text2.length();
 
         return fun(n-1,m-1,text1,text2);
+        
+    }
+};
+
+################# memoaization 
+class Solution {
+public:
+    int fun(int ind1 , int ind2 ,string s, string l,vector<vector<int>>&dp){
+        if(ind1<0||ind2<0){
+            return 0;
+        }
+        if(dp[ind1][ind2]!=-1){
+            return dp[ind1][ind2];
+        }
+        if(s[ind1]==l[ind2]){
+            return dp[ind1][ind2]= 1+fun(ind1-1,ind2-1,s,l,dp);
+
+        }
+
+        return dp[ind1][ind2]=max(fun(ind1-1,ind2,s,l,dp),fun(ind1,ind2-1,s,l,dp));
+
+    }
+    int longestCommonSubsequence(string text1, string text2) {
+        int n=text1.length();
+        int m=text2.length();
+
+        vector<vector<int>>dp(n,vector<int>(m,-1));
+
+        return fun(n-1,m-1,text1,text2,dp);
         
     }
 };
