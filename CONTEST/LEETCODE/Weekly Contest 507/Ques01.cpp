@@ -4,6 +4,8 @@
 //opration doesnt matter after performing LLRlRURUDUDD
 // or you perfor LLLRRRDDDUUU
 
+// final ans will be |L-R|+|U-D|+underscore
+// TC-o(|s|)
 
 
 #define ll long long
