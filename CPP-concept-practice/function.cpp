@@ -1,6 +1,53 @@
 #include <iostream>
 using namespace std;
 
+// size_t count_calls()
+// {
+//     static size_t ctr = 0; // value will persist across calls
+//     return ++ctr;
+// }
+// int main()
+// {
+//     for (size_t i = 0; i != 10; ++i)
+//         cout << count_calls() << endl;
+//     return 0;
+// }
+
+int getNextID()
+{
+    static int id = 0;
+    return ++id;
+}
+
+void fun()
+{
+    static int x = 0;
+
+    // static changes the lifetime not the
+    // scope x will remain accessible int the function
+    // Counting function calls (like this example)
+    //   Caching expensive computations
+    // Generating unique IDs
+    // Maintaining state between function calls without using global variables
+    // Singleton-style helper objects (with care)
+    x++;
+    cout << x << endl;
+}
+
+int main()
+{
+
+    fun();
+    fun();
+    fun();
+
+    cout << getNextID() << endl; // 1
+    cout << getNextID() << endl; // 2
+    cout << getNextID() << endl; // 3
+
+    return 0;
+}
+
 // A function call does two things: It initializes the function’s parameters from the
 // corresponding arguments, and it transfers control to that function.
 
@@ -11,7 +58,7 @@ using namespace std;
 // void swapByReference(int &x, int &y);
 
 // int main() {
-    
+
 //     int sum = add(5, 3);
 //     cout << "Sum: " << sum << endl;
 
@@ -25,9 +72,9 @@ using namespace std;
 //     // 🔹 Pass by Reference
 //     int a = 10, b = 20;
 //     cout << "Before swap: a = " << a << ", b = " << b << endl;
-    
+
 //     swapByReference(a, b);
-    
+
 //     cout << "After swap: a = " << a << ", b = " << b << endl;
 
 //     return 0;
