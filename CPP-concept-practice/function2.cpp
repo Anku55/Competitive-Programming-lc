@@ -44,3 +44,201 @@ int *p = &x;
 // literal 
 // temporary object 
 
+
+| Return                             | Safe? | Why                             |
+| ---------------------------------- | ----- | ------------------------------- |
+| `return localVariable;`            | ✅     | Returns a copy                  |
+| `return &localVariable;`           | ❌     | Pointer dangles                 |
+| `return localReference;`           | ❌     | Reference dangles               |
+| `return parameter;` (by reference) | ✅     | Parameter belongs to caller     |
+| `return globalVariable;`           | ✅     | Global lives for entire program |
+| `return staticVariable;`           | ✅     | Static lives until program ends |
+
+
+/*
+Rule 1
+
+Suppose
+
+int foo()
+{
+    int x = 10;
+    return x;
+}
+
+Is this okay?
+
+✅ Yes.
+
+Why?
+
+Because
+
+return x;
+
+returns a copy of x.
+
+Execution:
+
+foo()
+
+↓
+
+x = 10
+
+↓
+
+copy 10
+
+↓
+
+destroy x
+
+↓
+
+caller receives 10
+
+The caller has its own copy.
+
+Rule 2
+
+Now suppose
+
+int& foo()
+{
+    int x = 10;
+    return x;
+}
+
+Execution:
+
+foo()
+
+↓
+
+x = 10
+
+↓
+
+return reference to x
+
+↓
+
+function ends
+
+↓
+
+x is destroyed
+
+Now the caller has
+
+reference
+
+↓
+
+memory that no longer exists
+
+This is called a
+
+Dangling Reference
+
+Very dangerous.
+
+Memory Picture
+
+Inside function
+
+Stack
+
++------+
+| x=10 |
++------+
+
+Return
+
+return x;
+
+Reference points here
+
+reference
+    │
+    ▼
+
++------+
+| x=10 |
++------+
+
+Function ends
+
+Stack cleared
+
+Now
+
+reference
+↓
+garbage
+
+Book's Example
+const string&
+manip()
+{
+    string ret;
+
+    return ret;
+}
+
+Looks innocent.
+
+Actually
+
+Wrong
+
+because
+
+ret
+
+is local.
+
+It disappears after
+
+manip()
+
+ends.
+
+Even this is wrong
+const string&
+manip()
+{
+    return "Empty";
+}
+
+Many students think
+
+"But "Empty" is a literal."
+
+Actually
+
+return "Empty";
+
+does not return a string literal.
+
+The compiler creates
+
+temporary string
+
+because the return type is
+
+const string&
+
+Conceptually:
+
+string temp = "Empty";
+
+return temp;
+
+temp is destroyed when the function ends.
+
+Again,
+
+Dangling reference
+*/
