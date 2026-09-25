@@ -1,7 +1,7 @@
 class BrowserHistory {
 public:
-    stack<string> past; //back
-    stack<string> future; //future
+    stack<string> past; 
+    stack<string> future; 
     string curr;
     
     BrowserHistory(string homepage) {
