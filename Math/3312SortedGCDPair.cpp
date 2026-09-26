@@ -21,10 +21,8 @@ public:
         vector<long long> pairsWithGcd(maxVal+1, 0);
         for(int g = maxVal; g >= 1; g--) {
             long long count = divisorFreq[g];
-            //nC2
             pairsWithGcd[g] = count * (count-1)/2;
 
-            //Correction time
             for(int mult = 2*g; mult <= maxVal; mult += g) {
                 pairsWithGcd[g] -= pairsWithGcd[mult];
             }    
@@ -37,8 +35,7 @@ public:
 
         vector<int> result;
 
-        for(long long idx : queries) { //O(Q * log(maxVal))
-            int l = 1;
+        for(long long idx : queries) { 
             int r = maxVal;
             int temp = 1;
             while(l <= r) {
