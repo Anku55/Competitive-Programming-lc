@@ -1,183 +1,157 @@
-Yes. I’ll use the **680-problem DP list you uploaded as the source**, and select **450 problems** specifically for **pattern coverage**, not simply the first 450. Your source has 680 problems: 14 Easy, 329 Medium, and 337 Hard. 
+# Part 1 — DP Fundamentals
 
-### Structure
+## 1D DP / Basic DP
 
-* **Part 1:** 113 problems — DP fundamentals + 1D/2D DP + basic subsequence/string DP
-* **Part 2:** 112 problems — Knapsack, partition, interval DP, LIS, stock DP, tree DP
-* **Part 3:** 112 problems — Bitmask DP, Digit DP, Game DP, advanced state DP, optimization
-* **Part 4:** 113 problems — Advanced/hard patterns + remaining important variations
-* **Total:** **450 problems**
-
-I’ll keep the format exactly like your previous README list:
-
-```md
 - [ ] [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
-```
+- [ ] [91. Decode Ways](https://leetcode.com/problems/decode-ways/)
+- [ ] [198. House Robber](https://leetcode.com/problems/house-robber/)
+- [ ] [213. House Robber II](https://leetcode.com/problems/house-robber-ii/)
+- [ ] [279. Perfect Squares](https://leetcode.com/problems/perfect-squares/)
+- [ ] [322. Coin Change](https://leetcode.com/problems/coin-change/)
+- [ ] [338. Counting Bits](https://leetcode.com/problems/counting-bits/)
+- [ ] [343. Integer Break](https://leetcode.com/problems/integer-break/)
+- [ ] [377. Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)
+- [ ] [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
+- [ ] [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
+- [ ] [1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)
+- [ ] [1218. Longest Arithmetic Subsequence of Given Difference](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/)
+- [ ] [152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
+- [ ] [198. House Robber](https://leetcode.com/problems/house-robber/)
+- [ ] [740. Delete and Earn](https://leetcode.com/problems/delete-and-earn/)
+- [ ] [1646. Get Maximum in Generated Array](https://leetcode.com/problems/get-maximum-in-generated-array/)
+- [ ] [2140. Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/)
+- [ ] [2466. Count Ways To Build Good Strings](https://leetcode.com/problems/count-ways-to-build-good-strings/)
+- [ ] [2745. Construct the Longest New String](https://leetcode.com/problems/construct-the-longest-new-string/)
 
-# Part 1 — 113 Problems
+## Grid / 2D DP
 
-## 🟢 Foundations & 1D DP
+- [ ] [62. Unique Paths](https://leetcode.com/problems/unique-paths/)
+- [ ] [63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
+- [ ] [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
+- [ ] [120. Triangle](https://leetcode.com/problems/triangle/)
+- [ ] [174. Dungeon Game](https://leetcode.com/problems/dungeon-game/)
+- [ ] [221. Maximal Square](https://leetcode.com/problems/maximal-square/)
+- [ ] [304. Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/)
+- [ ] [576. Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/)
+- [ ] [688. Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard/)
+- [ ] [931. Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
+- [ ] [1139. Largest 1-Bordered Square](https://leetcode.com/problems/largest-1-bordered-square/)
+- [ ] [1277. Count Square Submatrices with All Ones](https://leetcode.com/problems/count-square-submatrices-with-all-ones/)
+- [ ] [1289. Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii/)
+- [ ] [1301. Number of Paths with Max Score](https://leetcode.com/problems/number-of-paths-with-max-score/)
+- [ ] [1594. Maximum Non Negative Product in a Matrix](https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/)
+- [ ] [1937. Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/)
+- [ ] [2218. Maximum Value of K Coins From Piles](https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/)
+- [ ] [2328. Number of Increasing Paths in a Grid](https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/)
+- [ ] [2510. Check if There is a Path With Equal Number of 0's And 1's](https://leetcode.com/problems/check-if-there-is-a-path-with-equal-number-of-0s-and-1s/)
 
-* [ ] [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
-* [ ] [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
-* [ ] [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
-* [ ] [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
-* [ ] [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
-* [ ] [198. House Robber](https://leetcode.com/problems/house-robber/)
-* [ ] [213. House Robber II](https://leetcode.com/problems/house-robber-ii/)
-* [ ] [152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
-* [ ] [740. Delete and Earn](https://leetcode.com/problems/delete-and-earn/)
-* [ ] [343. Integer Break](https://leetcode.com/problems/integer-break/)
-* [ ] [279. Perfect Squares](https://leetcode.com/problems/perfect-squares/)
-* [ ] [1025. Divisor Game](https://leetcode.com/problems/divisor-game/)
-* [ ] [1186. Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/)
-* [ ] [1191. K-Concatenation Maximum Sum](https://leetcode.com/problems/k-concatenation-maximum-sum/)
+## String DP
 
-## 🟡 Grid / Matrix DP
+- [ ] [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+- [ ] [10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
+- [ ] [44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
+- [ ] [72. Edit Distance](https://leetcode.com/problems/edit-distance/)
+- [ ] [87. Scramble String](https://leetcode.com/problems/scramble-string/)
+- [ ] [97. Interleaving String](https://leetcode.com/problems/interleaving-string/)
+- [ ] [115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)
+- [ ] [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
+- [ ] [132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/)
+- [ ] [139. Word Break](https://leetcode.com/problems/word-break/)
+- [ ] [140. Word Break II](https://leetcode.com/problems/word-break-ii/)
+- [ ] [516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)
+- [ ] [583. Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)
+- [ ] [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+- [ ] [664. Strange Printer](https://leetcode.com/problems/strange-printer/)
+- [ ] [712. Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)
+- [ ] [730. Count Different Palindromic Subsequences](https://leetcode.com/problems/count-different-palindromic-subsequences/)
+- [ ] [940. Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/)
+- [ ] [1035. Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/)
+- [ ] [1048. Longest String Chain](https://leetcode.com/problems/longest-string-chain/)
+- [ ] [1062. Longest Repeating Substring](https://leetcode.com/problems/longest-repeating-substring/)
+- [ ] [1092. Shortest Common Supersequence](https://leetcode.com/problems/shortest-common-supersequence/)
+- [ ] [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
+- [ ] [1312. Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
+- [ ] [1531. String Compression II](https://leetcode.com/problems/string-compression-ii/)
+- [ ] [1638. Count Substrings That Differ by One Character](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/)
+- [ ] [1682. Longest Palindromic Subsequence II](https://leetcode.com/problems/longest-palindromic-subsequence-ii/)
+- [ ] [1771. Maximize Palindrome Length From Subsequences](https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/)
+- [ ] [1977. Number of Ways to Separate Numbers](https://leetcode.com/problems/number-of-ways-to-separate-numbers/)
+- [ ] [1987. Number of Unique Good Subsequences](https://leetcode.com/problems/number-of-unique-good-subsequences/)
+- [ ] [2266. Count Number of Texts](https://leetcode.com/problems/count-number-of-texts/)
+- [ ] [2370. Longest Ideal Subsequence](https://leetcode.com/problems/longest-ideal-subsequence/)
+- [ ] [2472. Maximum Number of Non-overlapping Palindrome Substrings](https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/)
+- [ ] [2746. Decremental String Concatenation](https://leetcode.com/problems/decremental-string-concatenation/)
+- [ ] [2767. Partition String Into Minimum Beautiful Substrings](https://leetcode.com/problems/partition-string-into-minimum-beautiful-substrings/)
 
-* [ ] [62. Unique Paths](https://leetcode.com/problems/unique-paths/)
-* [ ] [63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
-* [ ] [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
-* [ ] [120. Triangle](https://leetcode.com/problems/triangle/)
-* [ ] [221. Maximal Square](https://leetcode.com/problems/maximal-square/)
-* [ ] [85. Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)
-* [ ] [542. 01 Matrix](https://leetcode.com/problems/01-matrix/)
-* [ ] [329. Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)
-* [ ] [174. Dungeon Game](https://leetcode.com/problems/dungeon-game/)
-* [ ] [741. Cherry Pickup](https://leetcode.com/problems/cherry-pickup/)
-* [ ] [764. Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign/)
-* [ ] [689. Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/)
+## Subsequence / Sequence DP
 
-## 🔵 Stock / State Machine DP
+- [ ] [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+- [ ] [354. Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/)
+- [ ] [368. Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/)
+- [ ] [376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)
+- [ ] [413. Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/)
+- [ ] [446. Arithmetic Slices II - Subsequence](https://leetcode.com/problems/arithmetic-slices-ii-subsequence/)
+- [ ] [491. Non-decreasing Subsequences](https://leetcode.com/problems/non-decreasing-subsequences/)
+- [ ] [673. Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)
+- [ ] [1027. Longest Arithmetic Subsequence](https://leetcode.com/problems/longest-arithmetic-subsequence/)
+- [ ] [1048. Longest String Chain](https://leetcode.com/problems/longest-string-chain/)
+- [ ] [1218. Longest Arithmetic Subsequence of Given Difference](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/)
+- [ ] [1425. Constrained Subsequence Sum](https://leetcode.com/problems/constrained-subsequence-sum/)
+- [ ] [1458. Max Dot Product of Two Subsequences](https://leetcode.com/problems/max-dot-product-of-two-subsequences/)
+- [ ] [1524. Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/)
+- [ ] [1671. Minimum Number of Removals to Make Mountain Array](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/)
+- [ ] [1964. Find the Longest Valid Obstacle Course at Each Position](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/)
+- [ ] [2272. Substring With Largest Variance](https://leetcode.com/problems/substring-with-largest-variance/)
+- [ ] [2770. Maximum Number of Jumps to Reach the Last Index](https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/)
+- [ ] [2771. Longest Non-decreasing Subarray From Two Arrays](https://leetcode.com/problems/longest-non-decreasing-subarray-from-Two-arrays/)
+- [ ] [3201. Find the Maximum Length of Valid Subsequence I](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-i/)
+- [ ] [3202. Find the Maximum Length of Valid Subsequence II](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/)
 
-* [ ] [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
-* [ ] [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)
-* [ ] [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
-* [ ] [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
-* [ ] [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
-* [ ] [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)
-* [ ] [871. Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/)
+## Counting / Combinatorial DP
 
-## 🟣 Knapsack / Subset / Partition DP
+- [ ] [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
+- [ ] [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)
+- [ ] [119. Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)
+- [ ] [256. Paint House](https://leetcode.com/problems/paint-house/)
+- [ ] [276. Paint Fence](https://leetcode.com/problems/paint-fence/)
+- [ ] [518. Coin Change II](https://leetcode.com/problems/coin-change-ii/)
+- [ ] [629. K Inverse Pairs Array](https://leetcode.com/problems/k-inverse-pairs-array/)
+- [ ] [688. Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard/)
+- [ ] [790. Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/)
+- [ ] [808. Soup Servings](https://leetcode.com/problems/soup-servings/)
+- [ ] [823. Binary Trees With Factors](https://leetcode.com/problems/binary-trees-with-factors/)
+- [ ] [920. Number of Music Playlists](https://leetcode.com/problems/number-of-music-playlists/)
+- [ ] [935. Knight Dialer](https://leetcode.com/problems/knight-dialer/)
+- [ ] [1220. Count Vowels Permutation](https://leetcode.com/problems/count-vowels-permutation/)
+- [ ] [1359. Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/)
+- [ ] [1639. Number of Ways to Form a Target String Given a Dictionary](https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/)
+- [ ] [2327. Number of People Aware of a Secret](https://leetcode.com/problems/number-of-people-aware-of-a-secret/)
+- [ ] [2466. Count Ways To Build Good Strings](https://leetcode.com/problems/count-ways-to-build-good-strings/)
+- [ ] [2750. Ways to Split Array Into Good Subarrays](https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/)
 
-* [ ] [322. Coin Change](https://leetcode.com/problems/coin-change/)
-* [ ] [518. Coin Change II](https://leetcode.com/problems/coin-change-ii/)
-* [ ] [377. Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)
-* [ ] [416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
-* [ ] [494. Target Sum](https://leetcode.com/problems/target-sum/)
-* [ ] [474. Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/)
-* [ ] [1049. Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/)
-* [ ] [368. Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/)
-* [ ] [698. Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/)
-* [ ] [879. Profitable Schemes](https://leetcode.com/problems/profitable-schemes/)
-* [ ] [1884. Egg Drop With 2 Eggs and N Floors](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/)
+## Basic State / Transition DP
 
-## 🟠 LIS / Subsequence DP
+- [ ] [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/)
+- [ ] [55. Jump Game](https://leetcode.com/problems/jump-game/)
+- [ ] [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
+- [ ] [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
+- [ ] [1025. Divisor Game](https://leetcode.com/problems/divisor-game/)
+- [ ] [1139. Largest 1-Bordered Square](https://leetcode.com/problems/largest-1-bordered-square/)
+- [ ] [1186. Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/)
+- [ ] [1191. K-Concatenation Maximum Sum](https://leetcode.com/problems/k-concatenation-maximum-sum/)
+- [ ] [1262. Greatest Sum Divisible by Three](https://leetcode.com/problems/greatest-sum-divisible-by-three/)
+- [ ] [1335. Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/)
+- [ ] [1397. Find All Good Strings](https://leetcode.com/problems/find-all-good-strings/)
+- [ ] [1406. Stone Game III](https://leetcode.com/problems/stone-game-iii/)
+- [ ] [1526. Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)
+- [ ] [1553. Minimum Number of Days to Eat N Oranges](https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/)
+- [ ] [1696. Jump Game VI](https://leetcode.com/problems/jump-game-vi/)
+- [ ] [1746. Maximum Subarray Sum After One Operation](https://leetcode.com/problems/maximum-subarray-sum-after-one-operation/)
+- [ ] [1749. Maximum Absolute Sum of Any Subarray](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/)
+- [ ] [2140. Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower/)
+- [ ] [2262. Total Appeal of A String](https://leetcode.com/problems/total-appeal-of-a-string/)
+- [ ] [2786. Visit Array Positions to Maximize Score](https://leetcode.com/problems/visit-array-positions-to-maximize-score/)
 
-* [ ] [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
-* [ ] [673. Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)
-* [ ] [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)
-* [ ] [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
-* [ ] [1035. Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/)
-* [ ] [1048. Longest String Chain](https://leetcode.com/problems/longest-string-chain/)
-* [ ] [718. Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/)
-* [ ] [873. Length of Longest Fibonacci Subsequence](https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/)
-
-## 🔴 String DP
-
-* [ ] [91. Decode Ways](https://leetcode.com/problems/decode-ways/)
-* [ ] [139. Word Break](https://leetcode.com/problems/word-break/)
-* [ ] [140. Word Break II](https://leetcode.com/problems/word-break-ii/)
-* [ ] [97. Interleaving String](https://leetcode.com/problems/interleaving-string/)
-* [ ] [115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)
-* [ ] [583. Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)
-* [ ] [712. Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)
-* [ ] [72. Edit Distance](https://leetcode.com/problems/edit-distance/)
-* [ ] [10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
-* [ ] [44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
-* [ ] [472. Concatenated Words](https://leetcode.com/problems/concatenated-words/)
-* [ ] [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
-* [ ] [132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/)
-
-## 🟡 Palindrome DP
-
-* [ ] [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
-* [ ] [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
-* [ ] [516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)
-* [ ] [1312. Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
-
-## 🟤 Interval DP
-
-* [ ] [312. Burst Balloons](https://leetcode.com/problems/burst-balloons/)
-* [ ] [1547. Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/)
-* [ ] [375. Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/)
-* [ ] [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
-* [ ] [95. Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)
-* [ ] [894. All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/)
-
-## 🌳 Tree DP
-
-* [ ] [337. House Robber III](https://leetcode.com/problems/house-robber-iii/)
-* [ ] [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
-* [ ] [1372. Longest ZigZag Path in a Binary Tree](https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/)
-* [ ] [1373. Maximum Sum BST in Binary Tree](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/)
-
-## 🎮 Game DP
-
-* [ ] [877. Stone Game](https://leetcode.com/problems/stone-game/)
-* [ ] [1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/)
-* [ ] [464. Can I Win](https://leetcode.com/problems/can-i-win/)
-* [ ] [526. Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)
-* [ ] [403. Frog Jump](https://leetcode.com/problems/frog-jump/)
-* [ ] [801. Minimum Swaps To Make Sequences Increasing](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/)
-* [ ] [818. Race Car](https://leetcode.com/problems/race-car/)
-
-## ⚫ Bitmask / Advanced State DP
-
-* [ ] [698. Partition to K Equal Sum Subsets](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/)
-* [ ] [526. Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement/)
-* [ ] [1879. Minimum XOR Sum of Two Arrays](https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/)
-* [ ] [691. Stickers to Spell Word](https://leetcode.com/problems/stickers-to-spell-word/)
-* [ ] [847. Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)
-* [ ] [1434. Number of Ways to Wear Different Hats to Each Other](https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/)
-
-## 🔢 Digit DP
-
-* [ ] [233. Number of Digit One](https://leetcode.com/problems/number-of-digit-one/)
-* [ ] [600. Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/)
-* [ ] [902. Numbers At Most N Given Digit Set](https://leetcode.com/problems/numbers-at-most-n-given-digit-set/)
-
-## 🚀 Advanced DP
-
-* [ ] [1025. Divisor Game](https://leetcode.com/problems/divisor-game/)
-* [ ] [1105. Filling Bookcase Shelves](https://leetcode.com/problems/filling-bookcase-shelves/)
-* [ ] [1230. Toss Strange Coins](https://leetcode.com/problems/toss-strange-coins/)
-* [ ] [1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/)
-* [ ] [1289. Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii/)
-* [ ] [1335. Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/)
-* [ ] [1340. Jump Game V](https://leetcode.com/problems/jump-game-v/)
-* [ ] [1363. Largest Multiple of Three](https://leetcode.com/problems/largest-multiple-of-three/)
-* [ ] [1411. Number of Ways to Paint N × 3 Grid](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/)
-* [ ] [1416. Restore The Array](https://leetcode.com/problems/restore-the-array/)
-* [ ] [1420. Build Array Where You Can Find The Maximum Exactly K Comparisons](https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/)
-* [ ] [1425. Constrained Subsequence Sum](https://leetcode.com/problems/constrained-subsequence-sum/)
-* [ ] [1444. Number of Ways of Cutting a Pizza](https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/)
-* [ ] [1449. Form Largest Integer With Digits That Add up to Target](https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/)
-* [ ] [1524. Number of Sub-arrays With Odd Sum](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/)
-* [ ] [1525. Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/)
-* [ ] [1526. Minimum Number of Increments on Subarrays to Form a Target Array](https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/)
-* [ ] [689. Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/)
-* [ ] [741. Cherry Pickup](https://leetcode.com/problems/cherry-pickup/)
-* [ ] [750. Number Of Corner Rectangles](https://leetcode.com/problems/number-of-corner-rectangles/)
-* [ ] [764. Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign/)
-* [ ] [801. Minimum Swaps To Make Sequences Increasing/)
-* [ ] [837. New 21 Game](https://leetcode.com/problems/new-21-game/)
-* [ ] [879. Profitable Schemes](https://leetcode.com/problems/profitable-schemes/)
-* [ ] [871. Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/)
-* [ ] [1884. Egg Drop With 2 Eggs and N Floors](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/)
-* [ ] [689. Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/)
-
-```
 # Part 2 — Advanced DP Patterns
 
 ## Knapsack / Subset / Partition DP
