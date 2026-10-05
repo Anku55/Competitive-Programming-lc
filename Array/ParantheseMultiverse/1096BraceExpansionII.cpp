@@ -10,7 +10,7 @@ public:
         if(s[idx] == '{') {
             idx++;
             result = performUnion();
-        } else { //alphabet
+        } else { 
             result = {string(1, s[idx])};
         }
 
@@ -19,7 +19,7 @@ public:
     }
 
     set<string> performConcat() {
-        set<string> result = {""}; //ordered set
+        set<string> result = {""}; 
 
         while(idx < n && (s[idx] == '{' || isalpha(s[idx]))) {
             set<string> temp = getUnit();
